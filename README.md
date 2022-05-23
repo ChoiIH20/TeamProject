@@ -1,4 +1,4 @@
-# PC방 키오스크 구현 팀 프로젝트 진행
+# Java기반 Spring FrameWork로 PC방 키오스크 구현 팀 프로젝트 진행
 
 + 주제: PC방 키오스크 구현
 + 설명: PC방의 메뉴 주문 키오스크를 웹에서 구현하였습니다
@@ -11,7 +11,7 @@
 + 언어 - Java 1.8version
 + DataBase - Oracle
 + FrameWork - SpringFrameWork
-
++ Server - Apache Tomcat Server
 
 
 
