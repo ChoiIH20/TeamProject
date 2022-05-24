@@ -11,7 +11,9 @@
 + 언어 - Java 1.8version
 + DataBase - Oracle
 + FrameWork - SpringFrameWork
-+ Server - Apache Tomcat Server
-
-
++ WAS - Apache Tomcat Server
++ WEB - Chrome
++ OS - Window
++ OpenSource - BootStrap
++ Tool - Eclipse
 
