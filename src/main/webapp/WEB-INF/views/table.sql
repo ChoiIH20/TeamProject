@@ -9,3 +9,11 @@ CREATE TABLE users(
    age number(5) not null,
    gender varchar2(5) not null
 );
+
+CREATE TABLE BASKETS (
+p_num NUMBER,
+p_name VARCHAR2(20),
+p_price NUMBER,
+b_num NUMBER PRIMARY KEY,
+u_name VARCHAR2(20),
+gender VARCHAR2(10));

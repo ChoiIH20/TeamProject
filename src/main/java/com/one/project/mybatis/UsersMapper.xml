@@ -3,8 +3,7 @@
 
 <mapper namespace="users">
 
-	<select id="isExist" parameterType="java.lang.String"
-		resultType="string">
+	<select id="isExist" parameterType="java.lang.String" resultType="string">
 		SELECT id
 		FROM users
 		WHERE id=#{id}
@@ -12,18 +11,15 @@
 
 	<insert id="insert" parameterType="usersDto">
 		INSERT INTO users
-		(id, pwd,
-		name, gender, regdate)
+		(id, pwd, name, gender, regdate)
 		VALUES(#{id }, #{pwd }, #{name }, #{gender},
 		SYSDATE)
 	</insert>
 
-	<select id="getData" parameterType="string"
-		resultType="usersDto">
+	<select id="getData" parameterType="string" resultType="usersDto">
 		select id, pwd, name, gender, regdate
 		from users
-		where
-		id=#{id }
+		where id=#{id }
 	</select>
 
 	<update id="pwdUpdate" parameterType="usersDto">

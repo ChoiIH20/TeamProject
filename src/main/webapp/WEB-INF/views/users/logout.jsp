@@ -8,17 +8,17 @@
 <meta charset="UTF-8">
 <title>로그아웃</title>
 <style>
-body {
-	background-color: #212529;
-	padding-top: 200px;
-	padding-bottom: 40px;
-}
+	body {
+		background-color: #212529;
+		padding-top: 200px;
+		padding-bottom: 40px;
+	}
 </style>
 </head>
 <body>
-	<script>
-		alert("로그아웃 되었습니다.");
-		location.href = "${pageContext.request.contextPath }/home.do";
-	</script>
+<script>
+	alert("로그아웃 되었습니다.");
+	location.href = "${pageContext.request.contextPath }/home.do";
+</script>
 </body>
 </html>

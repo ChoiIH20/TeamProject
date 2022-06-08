@@ -17,8 +17,7 @@
 		#{remain_stock}, #{pro_cate}, #{imagePath})
 	</insert>
 
-	<select id="getList" parameterType="productDto"
-		resultType="productDto">
+	<select id="getList" parameterType="productDto"	resultType="productDto">
 		SELECT pro_num, pro_name, pro_price, remain_stock
 		FROM
 		products
@@ -47,16 +46,10 @@
 		pro_num=#{pro_num}
 	</delete>
 
-
-	<select id="getProductList"
-		resultType="com.one.project.product.dto.ProductDto">
+	<select id="getProductList"	resultType="com.one.project.product.dto.ProductDto">
 		SELECT * FROM PRODUCTS
 		ORDER BY pro_num
 	</select>
-
-
-
-
 
 	<insert id="move" parameterType="String">
 		INSERT INTO reco
@@ -70,15 +63,12 @@
 		p_name=#{pro_name}
 	</delete>
 
-
-	<select id="getRecoList_woman"
-		resultType="com.one.project.product.dto.ProductDto">
+	<select id="getRecoList_woman" resultType="com.one.project.product.dto.ProductDto">
 		SELECT * FROM PRODUCTS
 		ORDER BY woman DESC
-
 	</select>
-	<select id="getRecoList_man"
-		resultType="com.one.project.product.dto.ProductDto">
+	
+	<select id="getRecoList_man" resultType="com.one.project.product.dto.ProductDto">
 		SELECT * FROM PRODUCTS
 		ORDER BY man DESC
 	</select>

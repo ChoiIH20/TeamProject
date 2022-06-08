@@ -7,9 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<script>
-		alert("${param.pro_name} 을(를) 수정 하였습니다.");
-		location.href = "${pageContext.request.contextPath}/product/updateList.do";
-	</script>
+<script>
+	alert("${param.pro_name} 을(를) 수정 하였습니다.");
+	location.href = "${pageContext.request.contextPath}/product/updateList.do";
+</script>
 </body>
 </html>

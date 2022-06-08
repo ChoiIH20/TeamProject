@@ -61,9 +61,9 @@ public class ProductController {
 	}
 
 	@RequestMapping("/product/pro_delete")
-	public String delete(int num, String pro_name) {
+	public String delete(int num) {
 		service.delete(num);
-		service.remove(pro_name);
+		//service.remove(pro_name);
 
 		return "redirect:/product/updateList.do";
 	}

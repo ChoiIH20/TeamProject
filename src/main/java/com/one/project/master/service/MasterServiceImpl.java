@@ -19,7 +19,6 @@ public class MasterServiceImpl implements MasterService {
 	public void getListMember(ModelAndView mView) {
 		List<MasterDto> list2 = dao.getList();
 		mView.addObject("list2", list2);
-
 	}
 
 	@Override
@@ -27,13 +26,11 @@ public class MasterServiceImpl implements MasterService {
 		MasterDto dto = new MasterDto();
 		dto.setB_num(b_num);
 		dao.delete2(dto);
-
 	}
 
 	@Override
 	public void clear() {
 		dao.clear();
-
 	}
 
 }
